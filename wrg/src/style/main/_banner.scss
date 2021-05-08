@@ -1,8 +1,82 @@
 .banner{
+  
+  $root: &;
   background: rgb(16,36,33);
-  background: linear-gradient(90deg, rgba(16,36,33,1) 0%, rgba(16,36,33,1) 55%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
-  padding: 100px 0;
+  background: linear-gradient(90deg, 
+            rgba(16,36,33,1) 0%, 
+            rgba(16,36,33,1) 55%, 
+            rgba(255,255,255,1) 55%, 
+            rgba(255,255,255,1) 100%);
+  padding: 100px 0 30px 0;
+
   &__text-wrap{
     background: $grey-1;
+    padding: 100px 80px;
   }
+
+  &__subhead{
+    font-family: $sailec;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5em;
+    color: $grey-4;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+  }
+
+  &__head{
+    font-family: $sailec;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 106pox;
+    color: $white;
+    margin-bottom: 46px;
+  }
+
+  &__caption{
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: $grey-4;
+    margin-bottom: 98px;
+  }
+
+  &__btn-wrap{
+    @include clearfix();
+  }
+  &__btn{
+    display: block;
+    float: left;
+    margin-right: 52px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__btn-link{
+    font-family: $sailec;
+    padding: 20px 27px;
+    background: $grey-5;
+    border: solid 1px transparent;
+    border-radius: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey-6;
+    transition: all ease 100ms;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      background: $grey-1;
+      border-color: $white;
+      color: $white;
+    }
+  }
+
 }
