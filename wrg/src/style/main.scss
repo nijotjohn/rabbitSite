@@ -1,0 +1,18 @@
+// libs imports
+@import './shared/overrides';
+@import '~bootstrap/scss/bootstrap';
+
+
+// custome imports
+@import './shared/fonts';
+@import './shared/vars';
+@import './shared/mixins';
+@import './shared/legacy';
+
+@import './header/header';
+@import './header/nav';
+
+@import './main/main';
+@import './main/banner';
+
+@import './footer/footer';

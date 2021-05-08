@@ -1,0 +1,54 @@
+.header{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 37px 0;
+
+  &__links-wrap{
+    display: block;
+    float: right;
+    @include clearfix();
+  }
+
+  &__nav-wrap,
+  &__user-wrap,
+  &__cart-wrap,
+  &__cart-count-wrap,
+  &__cart-link-wrap{
+    float: left;
+  }
+
+  &__nav-wrap,
+  &__user-wrap{
+    margin-right: 85px
+  }
+
+  &__user-link,
+  &__cart-link{
+    display: block
+  }
+
+  &__cart-wrap{
+    @include clearfix();
+  }
+
+  &__cart-count-wrap{
+    margin-right: 8px;
+    background: $grey-2;
+    border-radius: 100%;
+    height: 19px;
+    width: 19px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 9px;
+  }
+
+  &__cart-count{
+    color: $white;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+}

@@ -1,0 +1,32 @@
+.nav{
+  &__list{
+    display: block;
+    float: right;
+    @include clearfix();
+    list-style: none;
+  }
+  &__list-item{
+    display: block;
+    float: left;
+    margin-right: 36px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    display: block;
+    font-family: $sailec;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: $grey-2;
+    text-decoration: none;
+    transition: all ease 100ms;
+    border-bottom: solid 1px transparent;
+    &:hover{
+      border-bottom-color: $cyan-1;
+      color: $cyan-1;
+    }
+  }
+}
