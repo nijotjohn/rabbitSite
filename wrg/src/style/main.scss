@@ -8,6 +8,9 @@
 @import './shared/vars';
 @import './shared/mixins';
 @import './shared/legacy';
+@import './shared/typography';
+@import './shared/product';
+@import './shared/faq';
 
 @import './header/header';
 @import './header/nav';
@@ -16,6 +19,5 @@
 @import './main/section';
 @import './main/banner';
 
-@import './shared/product';
 
 @import './footer/footer';

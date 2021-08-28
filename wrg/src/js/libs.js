@@ -1,2 +1,3 @@
-// import jQuery from 
-console.log('sdd')
+// jquery
+import jQuery from 'jquery';
+window.jQuery = window.$ = jQuery;
